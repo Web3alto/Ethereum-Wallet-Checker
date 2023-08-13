@@ -84,7 +84,7 @@ nav .right img {
 .card::after {
 	position: absolute;
 	content: "Wallet Checker";
-	top: -7.5vh;
+	top: -3.5vw;
 	font-size: 2vw;
 	letter-spacing: 0.15vw;
 	text-transform: uppercase;
@@ -147,7 +147,7 @@ nav .right img {
 		padding: 2.5vw;
 	}
 	.card::after {
-		top: -5.5vh;
+		top: -8vw;
 		font-size: 3.5vw;
 		padding: 2vw 1vw 0 1vw;
 	}
@@ -184,6 +184,9 @@ nav .right img {
 	}
 	.card {
 		margin: 10vh 0 0 0;
+	}
+	.card::after {
+		top: -9vw;
 	}
 	.card input {
 		font-size: 3.5vw;
