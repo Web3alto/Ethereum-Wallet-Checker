@@ -1,0 +1,197 @@
+@font-face {
+	font-family: "Inter";
+	src: url("./assets/Inter-VariableFont.ttf") format("ttf");
+	font-weight: 800;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+	color: #000000;
+}
+.container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fefefe;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+nav {
+	position: fixed;
+	top: 0%;
+	z-index: 9999;
+	padding: 2vh 2.5vw 2vh 2.5vw;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	background: #fefefe;
+}
+nav .left h1 {
+	position: relative;
+	font-size: 3vw;
+	font-family: "Inter", sans-serif;
+	font-weight: 800;
+}
+nav .left h1::after {
+	content: "™";
+	position: absolute;
+	top: 0%;
+	right: -10%;
+	font-family: "Inter", sans-serif;
+	font-weight: 800;
+	font-size: 1.5vw;
+}
+nav .right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+nav .right a {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+nav .right h2 {
+	font-size: 1.5vw;
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+}
+nav .right img {
+	height: 2.75vh;
+	margin: -0.5vh 0 0 0.75vw;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.card {
+	margin: 5vh 0 0 0;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 60vw;
+	height: 50vh;
+	border: 1px solid #000000;
+	padding: 2.5vw;
+}
+.card::after {
+	position: absolute;
+	content: "Wallet Checker";
+	top: -7.5vh;
+	font-size: 2vw;
+	letter-spacing: 0.15vw;
+	text-transform: uppercase;
+	border-top: 1px solid #000000;
+	padding: 0.65vw 1vw 0 1vw;
+}
+
+.card input {
+	width: 33vw;
+	text-align: center;
+	height: 6.5vh;
+	margin: 0 0 2.5vh 0;
+	border: 1px solid #000000;
+	font-size: 1vw;
+	outline: none;
+}
+.card button {
+	width: 33vw;
+	text-align: center;
+	height: 6.5vh;
+	background: none;
+	outline: none;
+	border: 1px solid #000000;
+	transition: 0.25s ease;
+	cursor: pointer;
+	font-size: 1vw;
+}
+.card button:hover {
+	background: black;
+	color: white;
+}
+.card p {
+	margin: 3.5vh 0 0 0;
+	font-size: 1vw;
+}
+@media screen and (max-width: 999px) {
+	nav {
+		padding: 2vh 5vw 2vh 2.5vw;
+	}
+	nav .left h1 {
+		font-size: 8vw;
+	}
+	nav .left h1::after {
+		content: "™";
+
+		font-size: 4vw;
+	}
+	nav .right h2 {
+		font-size: 3.5vw;
+	}
+	nav .right img {
+		height: 2.25vh;
+		margin: 0 0 0 1.25vw;
+	}
+	.card {
+		margin: 5vh 0 0 0;
+		width: 80vw;
+		height: 60vh;
+		border: 1px solid #000000;
+		padding: 2.5vw;
+	}
+	.card::after {
+		top: -5.5vh;
+		font-size: 3.5vw;
+		padding: 2vw 1vw 0 1vw;
+	}
+	.card input {
+		width: 65vw;
+		height: 6.5vh;
+		margin: 0 0 2.5vh 0;
+		font-size: 3vw;
+	}
+	.card button {
+		width: 65vw;
+		height: 6.5vh;
+		font-size: 3vw;
+	}
+	.card p {
+		margin: 3.5vh 0 0 0;
+		font-size: 3vw;
+	}
+}
+@media screen and (max-width: 600px) {
+	nav {
+		width: 100vw;
+		padding: 2vh 7.5vw 2vh 5vw;
+	}
+	nav .left h1 {
+		font-size: 10vw;
+	}
+	nav .right h2 {
+		font-size: 5vw;
+	}
+	nav .right img {
+		width: 2.75vw;
+		margin: -0.2vh 0 0 1.75vw;
+	}
+	.card {
+		margin: 10vh 0 0 0;
+	}
+	.card input {
+		font-size: 3.5vw;
+	}
+	.card button {
+		font-size: 3.5vw;
+	}
+	.card p {
+		font-size: 3.5vw;
+	}
+}
